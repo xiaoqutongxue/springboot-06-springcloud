@@ -1,0 +1,13 @@
+server:
+  port: 8001
+
+#  eureka实例的主机名
+eureka:
+  instance:
+    prefer-ip-address: true   #注册服务时使用服务ip地址
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  #注册中心地址
+spring:
+  application:
+    name: provide-ticket
